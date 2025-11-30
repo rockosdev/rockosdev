@@ -26,18 +26,22 @@ class Developer:
 me = Developer()
 ```
 
-<!--
-**rockosdev/rockosdev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 📊 GitHub Analytics
 
-Here are some ideas to get you started:
+<div align="center">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-![Snake animation](https://github.com/rockosdev/rockosdev/blob/output/github-contribution-grid-snake.svg)
+![Piyush's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thepiyushmalhotra&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
+
+![GitHub Streak](https://streak-stats.demolab.com/?user=thepiyushmalhotra&theme=radical&hide_border=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thepiyushmalhotra&layout=compact&theme=radical&hide_border=true&langs_count=8)
+
+</div>
+
+## 🐍 Contribution Graph
+
+<div align="center">
+
+![Snake Game](https://raw.githubusercontent.com/thepiyushmalhotra/thepiyushmalhotra/output/github-contribution-grid-snake.svg)
+
+</div>
