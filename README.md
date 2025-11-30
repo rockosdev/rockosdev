@@ -26,17 +26,16 @@ class Developer:
 me = Developer()
 ```
 
-## 📊 GitHub Analytics
+## 🛠️ Technical Proficiency
 
-<div align="center">
-
-![Piyush's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thepiyushmalhotra&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=thepiyushmalhotra&theme=radical&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thepiyushmalhotra&layout=compact&theme=radical&hide_border=true&langs_count=8)
-
-</div>
+### Languages & Frameworks
+```
+C/C++      ██████████░░    90%
+Python     ███░░░░░░░░░    30%
+JavaScript ███░░░░░░░░░    30%
+Linux      ██████████░░    90%
+Docker     ██░░░░░░░░░░    20%
+```
 
 ## 🐍 Contribution Graph
 
