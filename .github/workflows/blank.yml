@@ -1,69 +1,39 @@
-name: Update Profile
+name: 🐍 Update Snake Animation
 
 on:
+  # 每天 UTC 时间 00:00 和 12:00 自动运行
   schedule:
-    - cron: "0 */12 * * *"  # 每12小时运行一次
-  workflow_dispatch:        # 手动触发
+    - cron: "0 0 * * *"
+    - cron: "0 12 * * *"
+  # 手动触发
+  workflow_dispatch:
+  # 推送到 main 分支时触发
   push:
-    branches: [ main ]      # 主分支推送时触发
+    branches: [ main ]
 
 jobs:
-  update-profile:
+  generate-snake:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-          
-      # 1. 生成贪吃蛇动画
-      - name: Generate Snake Animation
+      # 步骤 1: 检出代码
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        
+      # 步骤 2: 生成贪吃蛇动画
+      - name: 🐍 Generate Snake Animation
         uses: Platane/snk@master
         with:
           github_user_name: thepiyushmalhotra
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-          # 自定义颜色
           svg_out_path: dist/github-contribution-grid-snake.svg
-        
-      # 2. 生成 GitHub 统计卡片
-      - name: Generate GitHub Stats
-        uses: jstrieb/github-stats@master
-        with:
-          username: thepiyushmalhotra
-          # 可选：自定义主题
-          theme: radical
           
-      # 3. 更新活动动态
-      - name: Update Recent Activity
-        uses: jamesgeorge007/github-activity-readme@master
-        with:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAX_LINES: 10
-          
-      # 4. 如果有博客，更新博客文章列表
-      - name: Update Blog Posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://your-blog.com/feed.xml"
-          max_post_count: 5
-          
-      # 5. 提交更改
-      - name: Commit and Push Changes
+      # 步骤 3: 提交并推送生成的动画
+      - name: 📤 Commit and Push Snake
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git commit -m "Update profile assets" || exit 0
+          git config --local user.name "github-actions"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist/
+          git commit -m "🐍 Update snake animation - $(date +'%Y-%m-%d %H:%M:%S')" || exit 0
           git push
-          
-      # 6. 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v2.1.3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
