@@ -1,10 +1,9 @@
 
 <div align="center">
 
-![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hi%20There!%20👋&fontSize=50&fontAlignY=35&desc=I'm%20Piyush%20Malhotra&descSize=20&descAlignY=55)
+![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Hey%20I'm%20Rock!%20🎸&fontSize=50&fontAlignY=35&desc=Full%20Stack%20Developer&descSize=20&descAlignY=55)
 
 </div>
-
 ## 🧑‍💻 About Me
 
 ```python
