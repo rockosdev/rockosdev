@@ -39,5 +39,5 @@ Docker     ██░░░░░░░░░░    20%
 
 ## 🐍 Contribution Graph
 
-![Snake animation](https://github.com/rockosdev/rockosdev/blob/main/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/rockosdev/rockosdev/blob/output/github-snake-dark.svg)
 
